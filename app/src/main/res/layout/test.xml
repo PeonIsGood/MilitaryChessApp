@@ -11,7 +11,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.donny.militarychessapp.main.MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
@@ -59,782 +59,831 @@
 
         </RelativeLayout>
 
-        <android.support.constraint.ConstraintLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="#f7f7dd"
-            android:layout_weight="1">
+            android:layout_height="match_parent"
+            android:layout_marginTop="52dp"
+            android:layout_marginBottom="52dp">
 
             <ImageView
                 android:id="@+id/imageViewChessBoard"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/board720p" />
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@drawable/board720p"
+                tools:layout_height="wrap_content" />
 
             <ImageView
                 android:id="@+id/imageViewC1"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
-                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="1"
-                app:layout_constraintBottom_toTopOf="@id/imageViewC6"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC2"
-                app:layout_constraintStart_toStartOf="@id/imageViewChessBoard"
-                app:layout_constraintTop_toTopOf="@id/imageViewChessBoard"
-                app:layout_constraintVertical_chainStyle="spread_inside"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC2"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="3dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="2"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC3"
-                app:layout_constraintStart_toEndOf="@id/imageViewC1"
-                app:layout_constraintTop_toTopOf="@id/imageViewC1"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC3"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="3dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="3"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC4"
-                app:layout_constraintStart_toEndOf="@id/imageViewC2"
-                app:layout_constraintTop_toTopOf="@id/imageViewC1"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC4"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="221dp"
+                android:layout_marginTop="3dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="4"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC5"
-                app:layout_constraintStart_toEndOf="@id/imageViewC3"
-                app:layout_constraintTop_toTopOf="@id/imageViewC1"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC5"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="288dp"
+                android:layout_marginTop="3dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="5"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imageViewC4"
-                app:layout_constraintTop_toTopOf="@id/imageViewC1"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC6"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="50dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="6"
-                app:layout_constraintBottom_toTopOf="@id/imageViewC11"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC7"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageViewC1"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC7"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="50dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="7"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC8"
-                app:layout_constraintStart_toEndOf="@id/imageViewC6"
-                app:layout_constraintTop_toTopOf="@id/imageViewC6"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC8"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="50dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="8"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC9"
-                app:layout_constraintStart_toEndOf="@id/imageViewC7"
-                app:layout_constraintTop_toTopOf="@id/imageViewC6"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC9"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="221dp"
+                android:layout_marginTop="50dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="9"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC10"
-                app:layout_constraintStart_toEndOf="@id/imageViewC8"
-                app:layout_constraintTop_toTopOf="@id/imageViewC6"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC10"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="288dp"
+                android:layout_marginTop="50dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="10"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imageViewC9"
-                app:layout_constraintTop_toTopOf="@id/imageViewC6"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC11"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="87dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="11"
-                app:layout_constraintBottom_toTopOf="@id/imageViewC16"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC12"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageViewC6"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC12"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="87dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="12"
                 android:visibility="invisible"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC13"
-                app:layout_constraintStart_toEndOf="@id/imageViewC11"
-                app:layout_constraintTop_toTopOf="@id/imageViewC11"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC13"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="87dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="13"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC14"
-                app:layout_constraintStart_toEndOf="@id/imageViewC12"
-                app:layout_constraintTop_toTopOf="@id/imageViewC11"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC14"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="221dp"
+                android:layout_marginTop="87dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="14"
                 android:visibility="invisible"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC15"
-                app:layout_constraintStart_toEndOf="@id/imageViewC13"
-                app:layout_constraintTop_toTopOf="@id/imageViewC11"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC15"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="288dp"
+                android:layout_marginTop="87dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="15"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imageViewC14"
-                app:layout_constraintTop_toTopOf="@id/imageViewC11"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC16"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="124dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="16"
-                app:layout_constraintBottom_toTopOf="@id/imageViewC21"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC17"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageViewC11"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC17"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="124dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="17"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC18"
-                app:layout_constraintStart_toEndOf="@id/imageViewC16"
-                app:layout_constraintTop_toTopOf="@id/imageViewC16"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC18"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="124dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="18"
                 android:visibility="invisible"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC19"
-                app:layout_constraintStart_toEndOf="@id/imageViewC17"
-                app:layout_constraintTop_toTopOf="@id/imageViewC16"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC19"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="221dp"
+                android:layout_marginTop="124dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="19"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC20"
-                app:layout_constraintStart_toEndOf="@id/imageViewC18"
-                app:layout_constraintTop_toTopOf="@id/imageViewC16"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC20"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="288dp"
+                android:layout_marginTop="124dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="20"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imageViewC19"
-                app:layout_constraintTop_toTopOf="@id/imageViewC16"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC21"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="158dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="21"
-                app:layout_constraintBottom_toTopOf="@id/imageViewC26"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC22"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageViewC16"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC22"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="158dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="22"
                 android:visibility="invisible"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC23"
-                app:layout_constraintStart_toEndOf="@id/imageViewC21"
-                app:layout_constraintTop_toTopOf="@id/imageViewC21"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC23"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="158dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="23"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC24"
-                app:layout_constraintStart_toEndOf="@id/imageViewC22"
-                app:layout_constraintTop_toTopOf="@id/imageViewC21"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC24"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="221dp"
+                android:layout_marginTop="158dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="24"
                 android:visibility="invisible"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC25"
-                app:layout_constraintStart_toEndOf="@id/imageViewC23"
-                app:layout_constraintTop_toTopOf="@id/imageViewC21"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC25"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="288dp"
+                android:layout_marginTop="158dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="25"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imageViewC24"
-                app:layout_constraintTop_toTopOf="@id/imageViewC21"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC26"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="190dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="26"
-                app:layout_constraintBottom_toTopOf="@id/guideline"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC27"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageViewC21"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC27"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="190dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="27"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC28"
-                app:layout_constraintStart_toEndOf="@id/imageViewC26"
-                app:layout_constraintTop_toTopOf="@id/imageViewC26"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC28"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="190dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="28"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC29"
-                app:layout_constraintStart_toEndOf="@id/imageViewC27"
-                app:layout_constraintTop_toTopOf="@id/imageViewC26"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC29"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_marginStart="221dp"
+                android:layout_marginTop="190dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="29"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC30"
-                app:layout_constraintStart_toEndOf="@id/imageViewC28"
-                app:layout_constraintTop_toTopOf="@id/imageViewC26"
                 app:srcCompat="@drawable/blank0" />
 
             <ImageView
                 android:id="@+id/imageViewC30"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="288dp"
+                android:layout_marginTop="190dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="30"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imageViewC29"
-                app:layout_constraintTop_toTopOf="@id/imageViewC26"
                 app:srcCompat="@drawable/blank0" />
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.45" />
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.55" />
 
             <ImageView
                 android:id="@+id/imageViewC31"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="290dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="31"
-                app:layout_constraintBottom_toTopOf="@id/imageViewC36"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC32"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/guideline1"
-                app:layout_constraintVertical_chainStyle="spread_inside"
                 app:srcCompat="@drawable/shizhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC32"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="290dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="32"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC33"
-                app:layout_constraintStart_toEndOf="@id/imageViewC31"
-                app:layout_constraintTop_toTopOf="@id/imageViewC31"
                 app:srcCompat="@drawable/gongbing1" />
 
             <ImageView
                 android:id="@+id/imageViewC33"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="290dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="33"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC34"
-                app:layout_constraintStart_toEndOf="@id/imageViewC32"
-                app:layout_constraintTop_toTopOf="@id/imageViewC31"
                 app:srcCompat="@drawable/paizhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC34"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="221dp"
+                android:layout_marginTop="290dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="34"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC35"
-                app:layout_constraintStart_toEndOf="@id/imageViewC33"
-                app:layout_constraintTop_toTopOf="@id/imageViewC31"
                 app:srcCompat="@drawable/lianzhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC35"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="288dp"
+                android:layout_marginTop="290dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="35"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imageViewC34"
-                app:layout_constraintTop_toTopOf="@id/imageViewC31"
                 app:srcCompat="@drawable/shizhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC36"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="323dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="36"
-                app:layout_constraintBottom_toTopOf="@id/imageViewC41"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC37"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageViewC31"
                 app:srcCompat="@drawable/lvzhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC37"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignTop="@+id/imageViewC36"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="86dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="37"
                 android:visibility="invisible"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC38"
-                app:layout_constraintStart_toEndOf="@id/imageViewC36"
-                app:layout_constraintTop_toTopOf="@id/imageViewC36"
                 app:srcCompat="@drawable/blank1" />
 
             <ImageView
                 android:id="@+id/imageViewC38"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="323dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="38"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC39"
-                app:layout_constraintStart_toEndOf="@id/imageViewC37"
-                app:layout_constraintTop_toTopOf="@id/imageViewC36"
                 app:srcCompat="@drawable/lianzhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC39"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="221dp"
+                android:layout_marginTop="323dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="39"
                 android:visibility="invisible"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC40"
-                app:layout_constraintStart_toEndOf="@id/imageViewC38"
-                app:layout_constraintTop_toTopOf="@id/imageViewC36"
                 app:srcCompat="@drawable/blank1" />
 
             <ImageView
                 android:id="@+id/imageViewC40"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="288dp"
+                android:layout_marginTop="323dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="40"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imageViewC39"
-                app:layout_constraintTop_toTopOf="@id/imageViewC36"
                 app:srcCompat="@drawable/zhadan1" />
 
             <ImageView
                 android:id="@+id/imageViewC41"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="357dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="41"
-                app:layout_constraintBottom_toTopOf="@id/imageViewC46"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC42"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageViewC36"
                 app:srcCompat="@drawable/zhadan1" />
 
             <ImageView
                 android:id="@+id/imageViewC42"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="357dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="42"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC43"
-                app:layout_constraintStart_toEndOf="@id/imageViewC41"
-                app:layout_constraintTop_toTopOf="@id/imageViewC41"
                 app:srcCompat="@drawable/yingzhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC43"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="357dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="43"
                 android:visibility="invisible"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC44"
-                app:layout_constraintStart_toEndOf="@id/imageViewC42"
-                app:layout_constraintTop_toTopOf="@id/imageViewC41"
                 app:srcCompat="@drawable/blank1" />
 
             <ImageView
                 android:id="@+id/imageViewC44"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="221dp"
+                android:layout_marginTop="357dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="44"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC45"
-                app:layout_constraintStart_toEndOf="@id/imageViewC43"
-                app:layout_constraintTop_toTopOf="@id/imageViewC41"
                 app:srcCompat="@drawable/gongbing1" />
 
             <ImageView
                 android:id="@+id/imageViewC45"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="288dp"
+                android:layout_marginTop="357dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="45"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imageViewC44"
-                app:layout_constraintTop_toTopOf="@id/imageViewC41"
                 app:srcCompat="@drawable/lvzhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC46"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="393dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="46"
-                app:layout_constraintBottom_toTopOf="@id/imageViewC51"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC47"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageViewC41"
                 app:srcCompat="@drawable/junzhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC47"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="393dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="47"
                 android:visibility="invisible"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC48"
-                app:layout_constraintStart_toEndOf="@id/imageViewC46"
-                app:layout_constraintTop_toTopOf="@id/imageViewC46"
                 app:srcCompat="@drawable/blank1" />
 
             <ImageView
                 android:id="@+id/imageViewC48"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="393dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="48"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC49"
-                app:layout_constraintStart_toEndOf="@id/imageViewC47"
-                app:layout_constraintTop_toTopOf="@id/imageViewC46"
                 app:srcCompat="@drawable/tuanzhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC49"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="221dp"
+                android:layout_marginTop="393dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="49"
                 android:visibility="invisible"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC50"
-                app:layout_constraintStart_toEndOf="@id/imageViewC48"
-                app:layout_constraintTop_toTopOf="@id/imageViewC46"
                 app:srcCompat="@drawable/blank1" />
 
             <ImageView
                 android:id="@+id/imageViewC50"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="288dp"
+                android:layout_marginTop="393dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="50"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imageViewC49"
-                app:layout_constraintTop_toTopOf="@id/imageViewC46"
                 app:srcCompat="@drawable/lianzhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC51"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="430dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="51"
-                app:layout_constraintBottom_toTopOf="@id/imageViewC56"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC52"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageViewC46"
                 app:srcCompat="@drawable/siling1" />
 
             <ImageView
                 android:id="@+id/imageViewC52"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="430dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="52"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC53"
-                app:layout_constraintStart_toEndOf="@id/imageViewC51"
-                app:layout_constraintTop_toTopOf="@id/imageViewC51"
                 app:srcCompat="@drawable/gongbing1" />
 
             <ImageView
                 android:id="@+id/imageViewC53"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="430dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="53"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC54"
-                app:layout_constraintStart_toEndOf="@id/imageViewC52"
-                app:layout_constraintTop_toTopOf="@id/imageViewC51"
                 app:srcCompat="@drawable/yingzhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC54"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="221dp"
+                android:layout_marginTop="430dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="54"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC55"
-                app:layout_constraintStart_toEndOf="@id/imageViewC53"
-                app:layout_constraintTop_toTopOf="@id/imageViewC51"
                 app:srcCompat="@drawable/dilei1" />
 
             <ImageView
                 android:id="@+id/imageViewC55"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="288dp"
+                android:layout_marginTop="430dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="55"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imageViewC54"
-                app:layout_constraintTop_toTopOf="@id/imageViewC51"
                 app:srcCompat="@drawable/paizhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC56"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
-                android:layout_marginBottom="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="478dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="56"
-                app:layout_constraintBottom_toBottomOf="@id/imageViewChessBoard"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC57"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageViewC51"
                 app:srcCompat="@drawable/tuanzhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC57"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="478dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="57"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC58"
-                app:layout_constraintStart_toEndOf="@id/imageViewC56"
-                app:layout_constraintTop_toTopOf="@id/imageViewC56"
                 app:srcCompat="@drawable/paizhang1" />
 
             <ImageView
                 android:id="@+id/imageViewC58"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="478dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="58"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC59"
-                app:layout_constraintStart_toEndOf="@id/imageViewC57"
-                app:layout_constraintTop_toTopOf="@id/imageViewC56"
                 app:srcCompat="@drawable/dilei1" />
 
             <ImageView
                 android:id="@+id/imageViewC59"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_marginStart="221dp"
+                android:layout_marginTop="478dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="59"
-                app:layout_constraintEnd_toStartOf="@id/imageViewC60"
-                app:layout_constraintStart_toEndOf="@id/imageViewC58"
-                app:layout_constraintTop_toTopOf="@id/imageViewC56"
                 app:srcCompat="@drawable/junqi1" />
 
             <ImageView
                 android:id="@+id/imageViewC60"
                 android:layout_width="52dp"
                 android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="288dp"
+                android:layout_marginTop="478dp"
                 android:saveEnabled="false"
                 android:scaleType="fitXY"
                 android:tag="60"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imageViewC59"
-                app:layout_constraintTop_toTopOf="@id/imageViewC56"
                 app:srcCompat="@drawable/dilei1" />
 
             <ImageView
@@ -846,11 +895,6 @@
                 android:layout_alignTop="@+id/imageViewC7"
                 android:layout_marginTop="17dp"
                 android:visibility="invisible"
-                app:layout_constraintBottom_toTopOf="@id/imageViewStart"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_chainStyle="packed"
                 app:srcCompat="@drawable/diaodu" />
 
             <ImageView
@@ -861,10 +905,6 @@
                 android:layout_alignLeft="@+id/imageViewReady1"
                 android:layout_centerVertical="true"
                 android:visibility="invisible"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageViewReady0"
                 app:srcCompat="@drawable/startgame" />
 
             <ImageView
@@ -872,18 +912,21 @@
                 android:layout_width="200dp"
                 android:layout_height="100dp"
                 android:layout_alignTop="@+id/imageViewC37"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
                 android:visibility="invisible"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/diaodu" />
 
-        </android.support.constraint.ConstraintLayout>
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="0dp"
             android:background="#f7f7dd">
@@ -914,6 +957,6 @@
                 android:textStyle="normal|bold" />
         </RelativeLayout>
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>
